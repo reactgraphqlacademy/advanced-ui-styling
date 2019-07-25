@@ -55,8 +55,8 @@ const Page = () => (
     <h2>Tasks</h2>
     <h3>Task 1</h3>
     <p>
-      Go to <code>src/theme.js</code> and edit the fontSides in the theme so{" "}
-      <code>&#60;Box fontSize=&#123; 3 &#125; /&#62;</code> returns a font side
+      Go to <code>src/theme.js</code> and edit the fontSizes in the theme so{" "}
+      <code>&#60;Box fontSize=&#123; 3 &#125; /&#62;</code> returns a font size
       equals "1.25rem"
     </p>
     <p>
