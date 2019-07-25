@@ -1,0 +1,24 @@
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+/components/firebase/firebase.js
+firebase-debug.log
+.firebaserc
+.firebase
+package.lock
+package-lock.json
+
+# functions 
+functions/config
+
+# Build directory
+/public
+.DS_Store
+
+# Reports
+coverage
+cypress
+
+# Env
+.env
