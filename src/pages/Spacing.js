@@ -10,7 +10,7 @@ const Box = styled.div`
 
 const Page = () => (
   <div>
-    <h1>Color</h1>
+    <h1>Spacing</h1>
     <p>
       There are different set of functions that can use the space defined in the
       theme, like <code>space</code>, <code>layout</code> or{" "}
