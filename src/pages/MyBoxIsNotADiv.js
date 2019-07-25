@@ -10,7 +10,15 @@ const Page = () => (
     </p>
     <h2>Tasks</h2>
     <h3>Task 1</h3>
-    <p>The following component should be a button with 2 rem padding</p>
+    <p>
+      The following component should be a button with 2 rem padding. Hint{" "}
+      <a
+        target="_blank"
+        href="https://www.styled-components.com/docs/basics#extending-styles"
+      >
+        https://www.styled-components.com/docs/basics#extending-styles
+      </a>
+    </p>
     <p>
       <Box>I should be a button</Box>
     </p>
