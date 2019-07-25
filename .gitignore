@@ -13,7 +13,6 @@ package-lock.json
 functions/config
 
 # Build directory
-/public
 .DS_Store
 
 # Reports

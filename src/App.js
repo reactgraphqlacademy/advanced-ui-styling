@@ -8,6 +8,7 @@ import Spacing from "./pages/Spacing";
 import Flex from "./pages/Flex";
 import MyBoxIsNotADiv from "./pages/MyBoxIsNotADiv";
 import ResponsiveStyles from "./pages/ResponsiveStyles";
+import VariantCSSObject from "./pages/VariantCSSObject";
 
 const App = () => (
   <div style={{ display: "flex" }}>
@@ -101,6 +102,7 @@ const App = () => (
         <Route path="/flex" component={Flex} />
         <Route path="/not-a-div" component={MyBoxIsNotADiv} />
         <Route path="/responsive-styles" component={ResponsiveStyles} />
+        <Route path="/variant-css-object" component={VariantCSSObject} />
       </Switch>
     </div>
   </div>
