@@ -3,7 +3,7 @@ import styled from "styled-components";
 // import { fontFamily } from "styled-system";
 
 const fontFamily = ({ theme, fontFamily }) => {
-  return `font-family: ${`return here a font from the theme.fonts based on the font argument`};`;
+  return `font-family: ${`return here a font from the theme.fonts based on the fontFamily argument`};`;
 };
 
 const Box = styled.div`
