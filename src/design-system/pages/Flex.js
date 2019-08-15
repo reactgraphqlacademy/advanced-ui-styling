@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { typography, color, space, layout, flexbox } from "styled-system";
-import Box from "../components/Box";
 
 const Flex = styled.div`
     ${space}

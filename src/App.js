@@ -1,14 +1,14 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 
-import MyFirstBox from "./pages/MyFirstBox";
-import Typography from "./pages/Typography";
-import Color from "./pages/Color";
-import Spacing from "./pages/Spacing";
-import Flex from "./pages/Flex";
-import MyBoxIsNotADiv from "./pages/MyBoxIsNotADiv";
-import ResponsiveStyles from "./pages/ResponsiveStyles";
-import VariantCSSObject from "./pages/VariantCSSObject";
+import MyFirstBox from "./pages/design-system/MyFirstBox";
+import Typography from "./pages/design-system/Typography";
+import Color from "./pages/design-system/Color";
+import Spacing from "./pages/design-system/Spacing";
+import Flex from "./pages/design-system/Flex";
+import MyBoxIsNotADiv from "./pages/design-system/MyBoxIsNotADiv";
+import ResponsiveStyles from "./pages/design-system/ResponsiveStyles";
+import VariantCSSObject from "./pages/design-system/VariantCSSObject";
 
 const App = () => (
   <div style={{ display: "flex" }}>
