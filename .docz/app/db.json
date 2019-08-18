@@ -1,0 +1,369 @@
+{
+  "config": {
+    "title": "My App",
+    "description": "My awesome app using docz",
+    "menu": [],
+    "version": "0.1.0",
+    "repository": null,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "props": [
+    {
+      "key": "src/App.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "App",
+          "methods": [],
+          "actualName": "App"
+        }
+      ]
+    },
+    {
+      "key": "src/Root.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Root",
+          "methods": [],
+          "actualName": "Root"
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/compound-components/Page.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/context/Page.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/theming/Page.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/design-system/pages/Color.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/design-system/pages/Flex.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/design-system/pages/MyBoxIsNotADiv.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/design-system/pages/MyFirstBox.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/design-system/pages/ResponsiveStyles.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/design-system/pages/Spacing.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/design-system/pages/Typography.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/design-system/pages/Variants.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/compound-components/example/RadioGroup.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "RadioGroup",
+          "methods": [],
+          "actualName": "RadioGroup",
+          "props": {
+            "defaultValue": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/compound-components/example/RadioOption.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "RadioOption",
+          "methods": [],
+          "actualName": "RadioOption",
+          "props": {
+            "value": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/compound-components/exercise/Tabs.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TabList",
+          "methods": [],
+          "actualName": "TabList"
+        },
+        {
+          "description": "",
+          "displayName": "Tab",
+          "methods": [],
+          "actualName": "Tab"
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/context/example/Modal.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Modal",
+          "methods": [
+            {
+              "name": "showModal",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "content",
+                  "type": null
+                },
+                {
+                  "name": "backdrop",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "hideModal",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Modal",
+          "props": {
+            "children": {
+              "type": {
+                "name": "object"
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/design-system/components/layout/Tabs.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TabList",
+          "methods": [],
+          "actualName": "TabList"
+        },
+        {
+          "description": "",
+          "displayName": "Tab",
+          "methods": [],
+          "actualName": "Tab"
+        }
+      ]
+    },
+    {
+      "key": "src/design-system/pages/atoms/Image.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Page",
+          "methods": [],
+          "actualName": "Page"
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/context/exercise/components/App.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "App",
+          "methods": [],
+          "actualName": "App"
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/context/exercise/components/Button.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Button",
+          "methods": [],
+          "actualName": "Button",
+          "props": {
+            "onClick": {
+              "defaultValue": {
+                "value": "() => console.log('BUTTON CLICKED!')",
+                "computed": false
+              },
+              "required": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/context/exercise/components/Hero.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Hero",
+          "methods": [],
+          "actualName": "Hero"
+        }
+      ]
+    },
+    {
+      "key": "src/advanced-ui-patterns/context/exercise/components/ThemeProvider.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "ThemeProvider",
+          "methods": [
+            {
+              "name": "handleThemeToggle",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "ThemeProvider"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "key": "src/design-system/components/data-display/Image.mdx",
+      "value": {
+        "name": "Image Component",
+        "id": "349ca707b3f458f6f9f80c89d7007e2f",
+        "filepath": "src/design-system/components/data-display/Image.mdx",
+        "link": "",
+        "slug": "src-design-system-components-data-display-image",
+        "route": "/src-design-system-components-data-display-image",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "image-component",
+            "depth": 1,
+            "value": "Image Component"
+          }
+        ]
+      }
+    }
+  ]
+}

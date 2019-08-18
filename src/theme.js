@@ -2,11 +2,17 @@ const COLOR_BLUE = "#07c";
 const COLOR_GREEN = "#3f714c";
 const COLOR_BACKGROUND = "#f6f6ff";
 
+// https://github.com/system-ui/theme-specification
+
 const theme = {
   fonts: {
     serif: `"Times New Roman", Times, serif;`,
     sansSerif: `Arial, Helvetica, sans-serif;`,
     monospace: `"Courier New", Courier, monospace`
+  },
+  colors: {
+    blue: "#3332EE",
+    pink: "#AA00CC"
   },
   space: [
     "0rem", // 0
@@ -40,25 +46,6 @@ const theme = {
   fontWeights: {
     normal: "400",
     bold: "800"
-  },
-
-  buttons: {
-    primary: {
-      color: COLOR_BLUE,
-      border: `3px solid ${COLOR_BLUE}`,
-      ":hover": {
-        backgroundColor: COLOR_BLUE,
-        color: "white"
-      }
-    },
-    secondary: {
-      color: COLOR_GREEN,
-      border: `3px solid ${COLOR_GREEN}`,
-      ":hover": {
-        backgroundColor: COLOR_GREEN,
-        color: "white"
-      }
-    }
   }
 };
 

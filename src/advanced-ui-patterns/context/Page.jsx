@@ -1,32 +1,27 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import Example from "./example";
 import Exercise from "./exercise";
+import Modal from "./example/Modal";
 
 const Page = () => (
-  <div>
+  <Modal>
+    <Helmet>
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous"
+      />
+    </Helmet>
     <h2>Context</h2>
     <h3>Example</h3>
-    <p>
-      <a
-        target="_blank"
-        href="https://github.com/reactjsacademy/advanced-react-patterns/tree/master/src/components/patterns/Context/example"
-      >
-        source code exercise branch &#187;
-      </a>
-    </p>
     <Example />
     <p>
       <em>Folder: src/components/patterns/Context/example/Modal.jsx</em>
     </p>
     <h3>Exercise</h3>
-    <p>
-      <a
-        target="_blank"
-        href="https://github.com/reactjsacademy/advanced-react-patterns/tree/master/src/components/patterns/Context/exercise"
-      >
-        source code exercise branch &#187;
-      </a>
-    </p>
     <p>
       We are going to create a <strong>Theme Switcher</strong> component using
       Context. If you see{" "}
@@ -59,19 +54,11 @@ const Page = () => (
     <hr />
     <h3>Bonus Exercise</h3>
     <p>
-      <a
-        target="_blank"
-        href="https://github.com/reactjsacademy/advanced-react-patterns/tree/master/src/components/patterns/Context/xbonus"
-      >
-        source code exercise branch &#187;
-      </a>
-    </p>
-    <p>
       Implement the Redux Provider in
       <code>src/components/patterns/Context/xbonus/Provider.js</code>. Once
       implemented, use it in Root.js
     </p>
-  </div>
+  </Modal>
 );
 
 export default Page;

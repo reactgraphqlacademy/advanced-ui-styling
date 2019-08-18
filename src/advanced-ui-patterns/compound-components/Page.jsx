@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 import RadioGroup from "./example/RadioGroup";
-//import RadioOption from "./example/RadioOption";
+import Tabs, { TabPanel, Tab, TabList } from "./exercise/Tabs";
 
 const Page = () => (
   <React.Fragment>
@@ -57,6 +57,14 @@ const Page = () => (
         src/advanced-ui-patterns/compound-components/exercise/ so we don't have
         to pass explicitly the state.
       </p>
+      <Tabs defaultActiveTab="2">
+        <TabList>
+          <Tab name="1">one</Tab>
+          <Tab name="2">two</Tab>
+        </TabList>
+        <TabPanel name="1">111</TabPanel>
+        <TabPanel name="2">2222</TabPanel>
+      </Tabs>
       <hr />
     </div>
   </React.Fragment>

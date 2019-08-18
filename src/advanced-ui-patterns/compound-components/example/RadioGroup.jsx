@@ -1,31 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-class RadioGroup extends React.Component {
-  constructor(props) {
-    super();
-    this.state = {
-      value: props.defaultValue
-    };
+const RadioGroup = ({ defaultValue, children, onChange }) => {
+  const [value, setValue] = useState(defaultValue);
+
+  function select(value) {
+    setValue(value);
+    onChange && onChange(value);
   }
 
-  select(value) {
-    this.setState({ value }, () => {
-      this.props.onChange(this.state.value);
-    });
-  }
+  const newChildren = React.Children.map(children, child =>
+    React.cloneElement(child, {
+      isSelected: child.props.value === value,
+      onClick: () => select(child.props.value)
+    })
+  );
 
-  render() {
-    const children = React.Children.map(this.props.children, child =>
-      React.cloneElement(child, {
-        isSelected: child.props.value === this.state.value,
-        onClick: () => this.select(child.props.value)
-      })
-    );
-
-    return <div>{children}</div>;
-  }
-}
+  return <>{newChildren}</>;
+};
 
 const RadioOption = ({ onClick, isSelected, children }) => (
   <div onClick={onClick}>

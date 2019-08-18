@@ -7,5 +7,8 @@ const Box = styled.div`
   ${typography}
   ${layout}
 `;
+Box.defaultProps = {
+  font: "monospace"
+};
 
 export default Box;

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 
 /*
 For accesibility attributes visit
 https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-1/tabs.html
 */
+
+const StyledTabList = styled.ul``;
 
 export const TabList = ({
   activeTab,

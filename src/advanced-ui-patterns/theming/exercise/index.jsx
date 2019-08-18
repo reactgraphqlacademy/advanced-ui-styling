@@ -13,7 +13,7 @@ import styled, { ThemeProvider } from "styled-components";
   remember that you can call a function inside styled-components:
   color: ${props => YOUR EXPRESSION};
 */
-const Card = styled("div")`
+const Alert = styled("div")`
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
@@ -24,22 +24,11 @@ const Card = styled("div")`
 `;
 
 /*
-  in this component just use the background color from the theme and asign it to this component
-*/
-const Wrapper = styled("div")`
-  padding: 40px;
-`;
-
-/*
   TODO: you need to "wrap" your component with the `ThemeProvider` component
   - remember that you need to pass a `theme` to this provider.
-  - documentation:
+  - documentation: https://www.styled-components.com/docs/advanced#theming
 */
 
-const ThemingExercise = () => (
-  <Wrapper>
-    <Card>Hallo I'm a Card</Card>
-  </Wrapper>
-);
+const ThemingExercise = () => <Alert>Hallo I'm a Alert</Alert>;
 
 export default ThemingExercise;
