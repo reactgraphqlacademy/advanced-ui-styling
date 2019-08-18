@@ -10,15 +10,8 @@ Hints, use:
     2) Image.defaltProps;
 */
 
-const Image = styled("image")`
+const Image = styled("img")`
   margin-bottom: 0.9rem;
 `;
-
-// solution
-// const Image = styled(Box)``;
-// Image.defaultProps = {
-//   mb: 2,
-//   as: "img"
-// };
 
 export default Image;

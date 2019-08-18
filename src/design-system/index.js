@@ -31,6 +31,11 @@ const Index = ({ match }) => (
     />
     <Route path={`${match.url}/variant-props`} component={VariantsPage} />
     <Route path={`${match.url}/components/image`} component={ImagePage} />
+
+    <Route path={`${match.url}/components/image`} component={ImagePage} />
+    <Route path={`${match.url}/components/link`} component={ImagePage} />
+    <Route path={`${match.url}/components/card`} component={ImagePage} />
+    <Route path={`${match.url}/components/typography`} component={ImagePage} />
   </Switch>
 );
 
@@ -79,16 +84,16 @@ export const Menu = ({ path }) => (
           Atoms
           <List>
             <Item>
-              <Link to={`${path}/components/image`}>Image</Link>
+              <Link to={`${path}/atoms/image`}>Image</Link>
             </Item>
             <Item>
-              <Link to={`${path}/`}>Typography</Link>
+              <Link to={`${path}/atoms/typography`}>Typography</Link>
             </Item>
             <Item>
-              <Link to={`${path}/`}>Link</Link>
+              <Link to={`${path}/atoms/link`}>Link</Link>
             </Item>
             <Item>
-              <Link to={`${path}/`}>Card</Link>
+              <Link to={`${path}/atoms/card`}>Card</Link>
             </Item>
           </List>
         </Item>

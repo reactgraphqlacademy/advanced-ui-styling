@@ -25,44 +25,10 @@ Create a Typography component with the following variants:
 - the default variant should be 'span'
 */
 
-const variants = {
-  h1: {
-    as: "h1",
-    fontSize: 7
-  },
-  h2: {
-    as: "h2",
-    fontSize: 6
-  },
-  h3: {
-    as: "h3",
-    fontSize: 5
-  },
-  p: {
-    as: "p",
-    fontSize: 2
-  },
-  span: {
-    as: "span",
-    fontSize: 2
-  }
-};
+const variants = {};
 
-export const Text = props => <Typography {...props} />;
-Text.defaultProps = {
-  variant: "p"
-};
+export const Text = props => <p {...props} />;
 
-// before solution
-// export const Text = props => <p {...props} />;
-
-const StyledTypography = styled(Box)``;
-const Typography = ({ variant, ...rest }) => (
-  <StyledTypography {...variant && variants[variant]} {...rest} />
-);
-
-Typography.defaultProps = {
-  variant: "span"
-};
+const Typography = ({ variant, ...rest }) => <h2 {...rest} />;
 
 export default Typography;

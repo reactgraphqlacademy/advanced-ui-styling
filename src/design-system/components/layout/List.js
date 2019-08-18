@@ -18,9 +18,6 @@ List.defaultProps = {
   m: 0,
   p: 0
 };
-// export const Item = styled.li``;
-
-// const List = styled.ul``;
 
 List.Item = Item;
 

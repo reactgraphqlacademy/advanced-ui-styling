@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { fontFamily } from "styled-system";
+// import { fontFamily } from "styled-system";
+
+const fontFamily = ({ theme, fontFamily }) => {
+  return `font-family: ${`return here a font from the theme.fonts based on the font argument`};`;
+};
 
 const Box = styled.div`
   ${fontFamily}
 `;
-
-Box.defaultProps = {
-  fontFamily: "sansSerif"
-};
 
 const Page = () => (
   <div>

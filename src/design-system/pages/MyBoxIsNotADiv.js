@@ -14,9 +14,9 @@ const Page = () => (
       The following component should be a button with 2 rem padding. Hint{" "}
       <a
         target="_blank"
-        href="https://www.styled-components.com/docs/basics#extending-styles"
+        href="https://www.styled-components.com/docs/api#as-polymorphic-prop"
       >
-        https://www.styled-components.com/docs/basics#extending-styles
+        https://www.styled-components.com/docs/api#as-polymorphic-prop
       </a>
     </p>
     <p>

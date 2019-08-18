@@ -11,7 +11,6 @@ const theme = {
     monospace: `"Courier New", Courier, monospace`
   },
   colors: {
-    blue: "#3332EE",
     lightBlue: "#d1ecf1",
     pink: "#AA00CC",
     white: "#fff",

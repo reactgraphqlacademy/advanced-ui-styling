@@ -21,29 +21,7 @@ warning:
 - border left style: solid
 - background-color: yellow
 */
-// const Alert = styled("div")``;
 
-// solution
-const alertVariantProps = {
-  info: {
-    borderLeftColor: "blue",
-    backgroundColor: "lightBlue"
-  },
-  warning: {
-    borderLeftColor: "orange",
-    backgroundColor: "yellow"
-  }
-};
-
-const StyledAlert = styled(Box)``;
-const Alert = ({ variant, ...rest }) => (
-  <StyledAlert {...variant && alertVariantProps[variant]} {...rest} />
-);
-Alert.defaultProps = {
-  p: 3,
-  my: 2,
-  borderLeftWidth: "3px",
-  borderLeftStyle: "solid"
-};
+const Alert = styled("div")``;
 
 export default Alert;
