@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-
+import "normalize.css";
 import Tabs, {
   TabPanel,
   Tab,
@@ -20,7 +20,7 @@ const App = () => (
   <Route
     render={({ location }) => (
       <Flex>
-        <Box width="350px">
+        <Box width="400px">
           <Tabs
             defaultActiveTab={
               location.pathname.indexOf("design-system") < 0 ? "adv-ui" : "ds"
