@@ -50,7 +50,9 @@ Task 1. Using styled-components, implement some Bootstrap button styles in `src/
 3. Button large when prop `large={true}`
 4. Button block when prop `block={true}`
 
-Bonus question. The default <Button /> (meaning no props) doesn't have a border, why? Should we fix that? How would you fix it? Discuss with your peers. Hint, what's the default style for the [Bootstrap button](https://getbootstrap.com/docs/4.3/components/buttons/)?
+**Bonus question**. The default <Button /> (meaning no props) doesn't have a border, why? Should we fix that? How would you fix it? Discuss with your peers. Hint, what's the default style for the [Bootstrap button](https://getbootstrap.com/docs/4.3/components/buttons/)?
+
+**Bonus exercise.** Implement the the component and stories for the Bootstrap Alert component [https://getbootstrap.com/docs/4.3/components/alerts/](https://getbootstrap.com/docs/4.3/components/alerts/)
 
 ## Prerequisites
 

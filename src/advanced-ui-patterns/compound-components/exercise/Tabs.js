@@ -5,6 +5,22 @@ For accesibility attributes visit
 https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-1/tabs.html
 */
 
+const Tabs = ({ defaultActiveTab, children = null }) => {
+  const [activeTab, setActiveTab] = useState(defaultActiveTab);
+  const childExtendedProps = {
+    activeTab,
+    setActiveTab
+  };
+
+  // TODO:
+  // 1) Iterate the children using the function https://reactjs.org/docs/react-api.html#reactchildrenmap
+  // 2) Clone each child using the function https://reactjs.org/docs/react-api.html#cloneelement
+  //     and extend the children using the childExtendedProps defined above
+  // 3) Return the new children
+  return children;
+};
+Tabs.displayName = "Tabs";
+
 export const TabList = ({
   activeTab,
   setActiveTab,
@@ -15,9 +31,10 @@ export const TabList = ({
   const newChildren = React.Children.map(children, child => {
     const { name: nameCurrentTab } = child.props;
     const childExtendedProps = {
-      isActive: activeTab === nameCurrentTab,
-      onClick: () => setActiveTab(nameCurrentTab)
+      isActive: false, // TODO isActive should be true if the the child's prop 'name' is equals to the activeTab prop
+      onClick: () => setActiveTab && setActiveTab(nameCurrentTab)
     };
+
     return React.cloneElement(child, childExtendedProps);
   });
 
@@ -39,18 +56,5 @@ Tab.displayName = "Tab";
 export const TabPanel = ({ name, activeTab, children }) =>
   activeTab === name ? children : null;
 TabPanel.displayName = "TabPanel";
-
-const Tabs = ({ defaultActiveTab, children = null }) => {
-  const [activeTab, setActiveTab] = useState(defaultActiveTab);
-  const childExtendedProps = {
-    activeTab,
-    setActiveTab
-  };
-
-  return React.Children.map(children, child =>
-    React.cloneElement(child, childExtendedProps)
-  );
-};
-Tabs.displayName = "Tabs";
 
 export default Tabs;

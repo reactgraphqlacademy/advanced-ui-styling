@@ -2,6 +2,9 @@ import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import theme from "./theme";
 
+/*
+  Styled Components theme documentation https://www.styled-components.com/docs/advanced#theming
+*/
 const Button = styled("button")`
   border-radius: 8px;
   font-size: 24px;

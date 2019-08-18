@@ -83,7 +83,7 @@ export const TabPanel = ({ name, activeTab, children }) =>
   activeTab === name ? children : null;
 TabPanel.displayName = "TabPanel";
 
-const Tabs = ({ defaultActiveTab, children = null }) => {
+const Tabs = ({ defaultActiveTab, children = null, ...rest }) => {
   const [activeTab, setActiveTab] = useState(defaultActiveTab);
   const childExtendedProps = {
     activeTab,

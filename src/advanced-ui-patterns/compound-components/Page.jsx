@@ -53,9 +53,36 @@ const Page = () => (
       </div>
       <h3>Exercise</h3>
       <p>
-        Refactor the Tabs component in
-        src/advanced-ui-patterns/compound-components/exercise/ so we don't have
-        to pass explicitly the state.
+        Fix the following tabs so it changes the content when a tab is clicked.
+        Steps:
+      </p>
+      <p>
+        1- Open the file{" "}
+        <code>
+          {" "}
+          src/advanced-ui-patterns/compound-components/exercise/Tabs.jsx
+        </code>
+      </p>
+      <p>
+        2- Iterate the children of the Tabs component using the function{" "}
+        <a
+          target="_blank"
+          href="https://reactjs.org/docs/react-api.html#reactchildrenmap"
+        >
+          https://reactjs.org/docs/react-api.html#reactchildrenmap
+        </a>
+      </p>
+      <p>
+        3- Clone each child using the function{" "}
+        <a href="https://reactjs.org/docs/react-api.html#cloneelement">
+          https://reactjs.org/docs/react-api.html#cloneelement
+        </a>{" "}
+        and extend the children using the childExtendedProps defined in the same
+        Tabs component
+      </p>
+      <p>
+        4- The isActive in the TabList component should be true only if the the
+        child's prop 'name' is equals to the activeTab prop
       </p>
       <Tabs defaultActiveTab="2">
         <TabList>

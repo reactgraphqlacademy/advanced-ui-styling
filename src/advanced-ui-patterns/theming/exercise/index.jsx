@@ -29,6 +29,6 @@ const Alert = styled("div")`
   - documentation: https://www.styled-components.com/docs/advanced#theming
 */
 
-const ThemingExercise = () => <Alert>Hallo I'm a Alert</Alert>;
+const ThemingExercise = () => <Alert>Hello I'm a Alert</Alert>;
 
 export default ThemingExercise;

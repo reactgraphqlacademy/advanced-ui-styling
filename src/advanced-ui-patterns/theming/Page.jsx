@@ -23,9 +23,11 @@ const Page = props => (
     <Example />
     <hr />
     <h3>Exercise</h3>
-    <div style={{ marginBottom: 100 }}>
-      <Exercise />
-    </div>
+    <p>
+      Go to <code>src/advanced-ui-patterns/theming/exercise/index</code> and
+      follow the instructions
+    </p>
+    <Exercise />
   </div>
 );
 
