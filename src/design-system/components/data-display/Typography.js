@@ -48,6 +48,14 @@ const variants = {
   }
 };
 
+export const Text = props => <Typography {...props} />;
+Text.defaultProps = {
+  variant: "p"
+};
+
+// before solution
+// export const Text = props => <p {...props} />;
+
 const StyledTypography = styled(Box)``;
 const Typography = ({ variant, ...rest }) => (
   <StyledTypography {...variant && variants[variant]} {...rest} />

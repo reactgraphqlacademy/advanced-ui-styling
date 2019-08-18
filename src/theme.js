@@ -12,8 +12,15 @@ const theme = {
   },
   colors: {
     blue: "#3332EE",
-    pink: "#AA00CC"
+    lightBlue: "#d1ecf1",
+    pink: "#AA00CC",
+    white: "#fff",
+    lightGrey: "#eee",
+    yellow: "#ffeeba",
+    orange: "#FFA500",
+    grey: "#6A6C6E"
   },
+  radii: [0, 2, 4, 16],
   space: [
     "0rem", // 0
     "0.625rem", // 1

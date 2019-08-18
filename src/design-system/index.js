@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 // import { importMDX } from "mdx.macro";
+import List, { Item } from "./components/layout/List";
 import MyFirstBoxPage from "./pages/MyFirstBox";
 import TypographyPage from "./pages/Typography";
 import ColorPage from "./pages/Color";
@@ -16,9 +17,12 @@ import ImagePage from "./pages/atoms/Image";
 const Index = ({ match }) => (
   <Switch>
     <Route exact path={`${match.url}`} component={MyFirstBoxPage} />
-    <Route path={`${match.url}/typography`} component={TypographyPage} />
-    <Route path={`${match.url}/color`} component={ColorPage} />
-    <Route path={`${match.url}/spacing`} component={SpacingPage} />
+    <Route
+      path={`${match.url}/typography-attributes`}
+      component={TypographyPage}
+    />
+    <Route path={`${match.url}/color-attributes`} component={ColorPage} />
+    <Route path={`${match.url}/spacing-attributes`} component={SpacingPage} />
     <Route path={`${match.url}/flex`} component={FlexPage} />
     <Route path={`${match.url}/not-a-div`} component={MyBoxIsNotADivPage} />
     <Route
@@ -31,80 +35,82 @@ const Index = ({ match }) => (
 );
 
 export const Menu = ({ path }) => (
-  <ul>
-    <li>
+  <List>
+    <Item>
       Build a Box
-      <ul>
-        <li>
+      <List>
+        <Item>
           <Link to={path}>My first box</Link>
-        </li>
-        <li>
+        </Item>
+        <Item>
           <Link to={`${path}/typography-attributes`}>
             Typography attributes
           </Link>
-        </li>
-        <li>
+        </Item>
+        <Item>
           <Link to={`${path}/color-attributes`}>Color attributes</Link>
-        </li>
-        <li>
+        </Item>
+        <Item>
           <Link to={`${path}/spacing-attributes`}>Spacing attributes</Link>
-        </li>
-      </ul>
-    </li>
-    <li>
+        </Item>
+      </List>
+    </Item>
+    <Item>
       Specialize the Box
-      <ul>
-        <li>
+      <List>
+        <Item>
           <Link to={`${path}/flex`}>Flex</Link>
-        </li>
-        <li>
+        </Item>
+        <Item>
           <Link to={`${path}/not-a-div`}>My box is not div now</Link>
-        </li>
-      </ul>
-    </li>
-    <li>
+        </Item>
+      </List>
+    </Item>
+    <Item>
       <Link to={`${path}/responsive-styles`}>Responsive styles</Link>
-    </li>
-    <li>
+    </Item>
+    <Item>
       <Link to={`${path}/variant-props`}>Prop based variants</Link>
-    </li>
-    <li>
+    </Item>
+    <Item>
       Components
-      <ul>
-        <li>
+      <List>
+        <Item>
           Atoms
-          <ul>
-            <li>
+          <List>
+            <Item>
               <Link to={`${path}/components/image`}>Image</Link>
-            </li>
-            <li>
+            </Item>
+            <Item>
               <Link to={`${path}/`}>Typography</Link>
-            </li>
-            <li>
-              <Link to={`${path}/`}>Button</Link>
-            </li>
-            <li>
-              <Link to={`${path}/`}>LinkButton</Link>
-            </li>
-            <li>
+            </Item>
+            <Item>
+              <Link to={`${path}/`}>Link</Link>
+            </Item>
+            <Item>
               <Link to={`${path}/`}>Card</Link>
-            </li>
-          </ul>
-        </li>
-        <li>
+            </Item>
+          </List>
+        </Item>
+        <Item>
           Molecules
-          <ul>
-            <li>
-              <Link to={`${path}/`}>Search Input</Link>
-            </li>
-            <li>
-              <Link to={`${path}/`}>Profile Card</Link>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
+          <List>
+            <Item>
+              <Link to={`${path}/molecule/profile-card`}>Profile Card</Link>
+            </Item>
+          </List>
+        </Item>
+        <Item>
+          Organism
+          <List>
+            <Item>
+              <Link to={`${path}/organism/users`}>Users component</Link>
+            </Item>
+          </List>
+        </Item>
+      </List>
+    </Item>
+  </List>
 );
 
 export default Index;

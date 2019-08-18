@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Box from "./Box";
 
 /*
 For accesibility attributes visit
 https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-1/tabs.html
 */
 
-const StyledTabList = styled.ul``;
+const StyledTabList = styled(Box)`
+  list-style: none;
+`;
+StyledTabList.defaultProps = {
+  as: "ul",
+  m: 0,
+  p: 0
+};
 
 export const TabList = ({
   activeTab,
@@ -18,24 +26,56 @@ export const TabList = ({
   const newChildren = React.Children.map(children, child => {
     const { name: nameCurrentTab } = child.props;
     const childExtendedProps = {
-      isActive: activeTab === nameCurrentTab,
+      variant: activeTab === nameCurrentTab ? "active" : "default",
       onClick: () => setActiveTab(nameCurrentTab)
     };
     return React.cloneElement(child, childExtendedProps);
   });
 
   return (
-    <ul role="tablist" {...rest}>
+    <StyledTabList role="tablist" {...rest}>
       {newChildren}
-    </ul>
+    </StyledTabList>
   );
 };
 TabList.displayName = "TabList";
 
-export const Tab = ({ name, onClick, children, ...rest }) => (
-  <li role="tab" onClick={onClick} {...rest}>
+const StyledTab = styled(Box)`
+  ${({ cursor }) => `cursor: ${cursor};`}
+`;
+
+const tabListVariantProps = {
+  active: {
+    backgroundColor: "white",
+    borderBottomColor: "pink"
+  },
+  default: {
+    backgroundColor: "grey",
+    borderBottomColor: "black",
+    color: "white",
+    cursor: "pointer"
+  }
+};
+
+StyledTab.defaultProps = {
+  as: "li",
+  m: 0,
+  py: 2,
+  px: 4,
+  display: "inline-block",
+  variant: "default",
+  borderBottomWidth: "3px",
+  borderBottomStyle: "solid"
+};
+export const Tab = ({ name, onClick, children, variant, ...rest }) => (
+  <StyledTab
+    role="tab"
+    onClick={onClick}
+    {...variant && tabListVariantProps[variant]}
+    {...rest}
+  >
     {children}
-  </li>
+  </StyledTab>
 );
 Tab.displayName = "Tab";
 

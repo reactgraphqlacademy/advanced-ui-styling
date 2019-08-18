@@ -1,5 +1,7 @@
 import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+import Link from "../design-system/components/navigation/Link";
+import List, { Item } from "../design-system/components/layout/List";
 import CompoundComponentsPage from "./compound-components/Page";
 import ContextPage from "./context/Page";
 import ThemingPage from "./theming/Page";
@@ -16,17 +18,17 @@ const Index = ({ match }) => (
 );
 
 export const Menu = ({ path }) => (
-  <ul>
-    <li>
+  <List>
+    <Item>
       <Link to={`${path}/theming`}>Theming</Link>
-    </li>
-    <li>
+    </Item>
+    <Item>
       <Link to={`${path}/compound-components`}>Compound Components</Link>
-    </li>
-    <li>
+    </Item>
+    <Item>
       <Link to={`${path}/context`}>Context</Link>
-    </li>
-  </ul>
+    </Item>
+  </List>
 );
 
 export default Index;

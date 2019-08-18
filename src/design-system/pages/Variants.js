@@ -2,29 +2,32 @@ import React from "react";
 import styled from "styled-components";
 import { variant } from "styled-system";
 import Box from "../components/layout/Box";
-import Typography from "../components/data-display/Typography";
-
+import Typography, { Text } from "../components/data-display/Typography";
+import Alert from "../components/feedback/Alert";
+/*
+Button example
+*/
 const buttonVariantProps = {
   primary: {
-    backgroundColor: "blue"
-    // p: 2 // p:2 is the same in both variants, how can we fix that?
+    backgroundColor: "blue",
+    p: 2 // p:2 is the same in both variants, how can we fix that?
   },
   secondary: {
-    backgroundColor: "pink"
-    // p: 2 // p:2 is the same in both variants, how can we fix that?
+    backgroundColor: "pink",
+    p: 2 // p:2 is the same in both variants, how can we fix that?
   }
 };
 
-const StyledButton = styled(Box)`
-  border-radius: 5px;
-`;
+const StyledButton = styled(Box)``;
 const Button = ({ variant, ...rest }) => (
   <StyledButton {...variant && buttonVariantProps[variant]} {...rest} />
 );
 Button.defaultProps = {
   as: "button",
   variant: "primary",
-  p: 2
+  color: "white",
+  fontSize: 2,
+  borderRadius: 2
 };
 
 // show students the variant function alternative
@@ -34,25 +37,39 @@ Button.defaultProps = {
 //   })}
 // `;
 
+/*
+Exercise:
+*/
 const Page = () => (
   <div>
     <Typography variant="h1">Variants</Typography>
-    <p>
+    <Typography variant="h2">Example</Typography>
+    <Text>
       <Button>I'm a primary button</Button>
-    </p>
-    <p>
+    </Text>
+    <Text>
       <Button variant="secondary">I'm a secondary button</Button>
-    </p>
-    <p>
-      Create an image component in{" "}
-      <code>src/design-system/components/data-display/Image.js</code> using the
-      Box from <code>src/design-system/components/layout/Box</code>
-    </p>
-    <h2>Headings</h2>
-    h1. Heading h2. Heading h3. Heading h4. Heading h5. Heading h6. Heading
-    <h2>Paragraph</h2>
-    <h2>Text</h2>
-    <h2>One Typography to rule them all</h2>
+    </Text>
+    <Typography variant="h2">Exercise</Typography>
+
+    <Text>
+      Refactor the Alert component in{" "}
+      <code>src/design-system/components/feedback/Alert.js</code> to implement
+      two variants following the specifi defined in the Alert.js file. Use the
+      Box component (already imported in that file).
+    </Text>
+
+    <Alert variant="info">
+      Hint: It's very similar to the Button example above, but you might not
+      need to define the 'as' prop if the Box component already defines the 'as'
+      props that we need.
+    </Alert>
+
+    <Alert variant="warning">
+      Heads-up! If you want to use the colors from the theme you'll have to use
+      the props 'borderLeftColor', 'borderLeftStyle', and 'borderLeftWidth'
+      instead of the prop 'borderLeft'
+    </Alert>
   </div>
 );
 
