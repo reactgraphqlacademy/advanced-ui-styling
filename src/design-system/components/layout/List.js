@@ -16,7 +16,10 @@ const List = styled(Box)`
 List.defaultProps = {
   as: "ul",
   m: 0,
-  p: 0
+  pt: 0,
+  pb: 0,
+  pl: 0,
+  pr: 0
 };
 
 List.Item = Item;

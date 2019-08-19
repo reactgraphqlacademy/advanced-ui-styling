@@ -12,7 +12,10 @@ const StyledTabList = styled(Box)`
 `;
 StyledTabList.defaultProps = {
   as: "ul",
-  m: 0,
+  mt: 0,
+  mb: 0,
+  ml: 0,
+  mr: 0,
   p: 0
 };
 
@@ -47,11 +50,11 @@ const StyledTab = styled(Box)`
 const tabListVariantProps = {
   active: {
     backgroundColor: "white",
-    borderBottomColor: "pink"
+    borderBottomColor: "black"
   },
   default: {
     backgroundColor: "grey",
-    borderBottomColor: "black",
+    borderBottomColor: "pink",
     color: "white",
     cursor: "pointer"
   }

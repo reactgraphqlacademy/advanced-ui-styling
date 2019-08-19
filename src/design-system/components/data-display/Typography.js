@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Box from "../layout/Box";
-// show students how the variant function works
+// show students how the variant function doesn't work in this case
 // import { variant } from "styled-system";
 
 /* 
-EXERCISE
+EXERCISE PART 1
+
 Create a Typography component with the following variants:
  - h1:
     must render as an 'h1' dom element
@@ -22,13 +23,21 @@ Create a Typography component with the following variants:
 - span
     must render as a 'span' dom element
     font size must be the 2nd from our design system
-- the default variant should be 'span'
+- the default variant should be 'p'
 */
 
 const variants = {};
 
-export const Text = props => <p {...props} />;
-
 const Typography = ({ variant, ...rest }) => <h2 {...rest} />;
+
+/* 
+EXERCISE PART 2
+
+Compose the Text component with the Typography component so the Text component renders as 'p' by default
+*/
+
+export const Text = props => (
+  <p style={{ marginTop: 0, marginBottom: "1rem" }} {...props} />
+);
 
 export default Typography;

@@ -26,7 +26,7 @@ const App = () => (
               location.pathname.indexOf("design-system") < 0 ? "adv-ui" : "ds"
             }
           >
-            <TabList>
+            <TabList mb={3}>
               <Tab name="adv-ui">Adv. UI Patterns</Tab>
               <Tab name="ds">Design System</Tab>
             </TabList>

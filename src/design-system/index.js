@@ -1,6 +1,8 @@
 import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 // import { importMDX } from "mdx.macro";
+import Link from "./components/navigation/Link";
+import { Text } from "./components/data-display/Typography";
 import List, { Item } from "./components/layout/List";
 import MyFirstBoxPage from "./pages/MyFirstBox";
 import TypographyPage from "./pages/Typography";
@@ -46,7 +48,7 @@ const Index = ({ match }) => (
 export const Menu = ({ path }) => (
   <List>
     <Item>
-      Build a Box
+      <Text>Build a Box</Text>
       <List>
         <Item>
           <Link to={path}>My first box</Link>
@@ -65,7 +67,7 @@ export const Menu = ({ path }) => (
       </List>
     </Item>
     <Item>
-      Specialize the Box
+      <Text>Specialize the Box</Text>
       <List>
         <Item>
           <Link to={`${path}/flex`}>Flex</Link>
@@ -82,10 +84,10 @@ export const Menu = ({ path }) => (
       <Link to={`${path}/variant-props`}>Prop based variants</Link>
     </Item>
     <Item>
-      Components
+      <Text>Components</Text>
       <List>
         <Item>
-          Atoms
+          <Text>Atoms</Text>
           <List>
             <Item>
               <Link to={`${path}/atoms/image`}>Image</Link>
@@ -102,7 +104,7 @@ export const Menu = ({ path }) => (
           </List>
         </Item>
         <Item>
-          Molecules
+          <Text>Molecules</Text>
           <List>
             <Item>
               <Link to={`${path}/molecule/profile-card`}>Profile Card</Link>
@@ -110,7 +112,7 @@ export const Menu = ({ path }) => (
           </List>
         </Item>
         <Item>
-          Organism
+          <Text>Organism</Text>
           <List>
             <Item>
               <Link to={`${path}/organism/users`}>Users component</Link>
