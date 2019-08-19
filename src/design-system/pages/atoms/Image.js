@@ -13,8 +13,8 @@ const Page = () => (
       prop. Hints, use:
     </Text>
     <List>
-      <Item>1) styled(Box) </Item>
-      <Item>2) Image.defaultProps</Item>
+      <Item>styled(Box) </Item>
+      <Item>Image.defaultProps</Item>
     </List>
     <Image
       maxWidth="100px"

@@ -13,15 +13,13 @@ const Page = () => (
       the Box component with the following styles:
     </Text>
     <List>
-      <Item>1) Border of 1px solid grey </Item>
-      <Item>2) Thin shadow from the theme</Item>
-      <Item>
-        3) Padding 3 from the theme on desktop and padding 1 on mobile
-      </Item>
-      <Item>4) Border radius 2 from the theme</Item>
-      <Item>5) overflow hidden</Item>
-      <Item>6) background color pink</Item>
-      <Item>7) display inline-block</Item>
+      <Item>Border of 1px solid grey </Item>
+      <Item>Thin shadow from the theme</Item>
+      <Item>Padding 3 from the theme on desktop and padding 1 on mobile</Item>
+      <Item>Border radius 2 from the theme</Item>
+      <Item>overflow hidden</Item>
+      <Item>background color pink</Item>
+      <Item>display inline-block</Item>
     </List>
     <Card>
       <Image
