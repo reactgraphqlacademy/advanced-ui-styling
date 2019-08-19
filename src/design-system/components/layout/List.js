@@ -11,6 +11,7 @@ Item.defaultProps = {
 };
 
 const List = styled(Box)``;
+
 List.defaultProps = {
   as: "ul",
   m: 0,

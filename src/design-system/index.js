@@ -16,6 +16,7 @@ import ImagePage from "./pages/atoms/Image";
 import TypographyAtomsPage from "./pages/atoms/Typography";
 import LinkPage from "./pages/atoms/Link";
 import CardPage from "./pages/atoms/Card";
+import ListPage from "./pages/atoms/List";
 
 // const ImagePage = importMDX.sync("./components/data-display/Image.mdx");
 
@@ -42,6 +43,7 @@ const Index = ({ match }) => (
       component={TypographyAtomsPage}
     />
     <Route path={`${match.url}/atoms/link`} component={LinkPage} />
+    <Route path={`${match.url}/atoms/list`} component={ListPage} />
   </Switch>
 );
 
@@ -93,13 +95,16 @@ export const Menu = ({ path }) => (
               <Link to={`${path}/atoms/image`}>Image</Link>
             </Item>
             <Item>
+              <Link to={`${path}/atoms/link`}>Link</Link>
+            </Item>
+            <Item>
+              <Link to={`${path}/atoms/list`}>List</Link>
+            </Item>
+            <Item>
               <Link to={`${path}/atoms/card`}>Card</Link>
             </Item>
             <Item>
               <Link to={`${path}/atoms/typography`}>Typography</Link>
-            </Item>
-            <Item>
-              <Link to={`${path}/atoms/link`}>Link</Link>
             </Item>
           </List>
         </Item>

@@ -66,7 +66,7 @@ const Page = () => (
     </Alert>
 
     <Alert variant="warning">
-      Heads-up! If you want to use the colors from the theme you'll have to use
+      Heads up! If you want to use the colors from the theme you'll have to use
       the props 'borderLeftColor', 'borderLeftStyle', and 'borderLeftWidth'
       instead of the prop 'borderLeft'
     </Alert>

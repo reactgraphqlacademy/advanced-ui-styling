@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "../../components/data-display/Image";
 import Typography, { Text } from "../../components/data-display/Typography";
 import List, { Item } from "../../components/layout/List";
+import Link from "../../components/navigation/Link";
 
 const Page = () => (
   <React.Fragment>
@@ -43,6 +43,28 @@ const Page = () => (
       the Text component is composed with the Typography component. The Text
       component should render as 'p' by default
     </Text>
+
+    <Typography variant="h2">Exercise part 3</Typography>
+    <Text>
+      Choose a font from{" "}
+      <Link to="https://fonts.google.com/">https://fonts.google.com/</Link> and
+      apply it to all the text on the site. Steps:
+    </Text>
+
+    <List>
+      <Item>
+        Import the font in your app. You can create a font.css file in src and
+        add it there. Then import your font in 'src/App.js'
+      </Item>
+      <Item>
+        Map the font name to a key in the 'fonts' object inside{" "}
+        <code>src/theme.js</code>
+      </Item>
+      <Item>
+        Update the 'src/design-system/components/layout/Box' so it has a default
+        prop called 'fontFamily' equals "key of your font in the theme"
+      </Item>
+    </List>
   </React.Fragment>
 );
 
