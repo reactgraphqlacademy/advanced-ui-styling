@@ -37,7 +37,7 @@ import React from "react";
 //     -ms-user-select: none;
 //     user-select: none;
 //     background-image: none;
-//     border: 1px solid grey;
+//     border: 1px solid transparent;
 //     border-radius: 4px;
 // }
 

@@ -11,6 +11,9 @@ import {
   typography
 } from "styled-system";
 
+import Typography, { Text } from "../components/data-display/Typography";
+import List, { Item } from "../components/layout/List";
+
 const Box = styled.div`
   ${fontFamily}
   ${lineHeight}
@@ -23,61 +26,60 @@ const Box = styled.div`
 
 const Page = () => (
   <React.Fragment>
-    <h1>Typography</h1>
-    <p>
+    <Typography variant="h1">Typography</Typography>
+    <Text>
       styled-system provides the following functions to style different
       typography properties
-    </p>
-    <ul>
-      <li>
+    </Text>
+    <List>
+      <Item>
         <code>fontFamily</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>fontSize</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>fontWeight</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>lineHeight</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>letterSpacing</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>textAlign</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>fontStyle</code>
-      </li>
-    </ul>
+      </Item>
+    </List>
     <hr />
-    <h2>Tasks</h2>
-    <h3>Task 1</h3>
-    <p>
+    <Typography variant="h2">Tasks</Typography>
+    <Typography variant="h3">Task 1</Typography>
+    <Text>
       Go to <code>src/theme.js</code> and edit the fontSizes in the theme so{" "}
       <code>&#60;Box fontSize=&#123; 3 &#125; /&#62;</code> returns a font size
       equals "1.25rem"
-    </p>
-    <p>
+    </Text>
+    <Text>
       You will know it works because <strong>text A</strong> will look bigger
       than <strong>text B</strong>:
-    </p>
+    </Text>
     <Box fontSize={3}>text A</Box>
     <br />
     <Box fontSize={2}>text B</Box>
 
-    <h3>Task 2</h3>
-    <p>
+    <Typography variant="h3">Task 2</Typography>
+    <Text>
       Why does the following prop textAlign="center" work if textAlign is not in{" "}
       <code>src/theme.js</code>?
-    </p>
+    </Text>
     <Box style={{ width: "100%" }} textAlign="center" fontFamily="monospace">
       Am I centered?
     </Box>
-
-    <h3>Task 3</h3>
-    <p>
+    <Typography variant="h3">Task 3</Typography>
+    <Text>
       Styled System also includes a function called <code>typograpy</code> that
       include the functions{" "}
       <code>
@@ -85,13 +87,13 @@ const Page = () => (
         and fontStyle
       </code>
       .
-    </p>
-    <p>
+    </Text>
+    <Text>
       Replace all the the styled system functions used in the Box component
       defined in <code>src/pages/Typography</code> with the{" "}
       <code>typography</code> function. Hint the <code>typography</code>{" "}
       function is already imported at the top of the file.
-    </p>
+    </Text>
   </React.Fragment>
 );
 

@@ -54,7 +54,8 @@ const Page = () => (
     <List>
       <Item>
         Import the font in your app. You can create a font.css file in src and
-        add it there. Then import your font in 'src/App.js'
+        add it there. Then in 'src/App.js' you can do{" "}
+        <code>import './fonts.css'</code>
       </Item>
       <Item>
         Map the font name to a key in the 'fonts' object inside{" "}

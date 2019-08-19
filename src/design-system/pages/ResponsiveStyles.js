@@ -1,10 +1,11 @@
 import React from "react";
 import Box from "../components/layout/Box";
+import Typography, { Text } from "../components/data-display/Typography";
 
 const Page = () => (
   <div>
-    <h1>Responsive styles</h1>
-    <p>
+    <Typography variant="h1">Responsive styles</Typography>
+    <Text>
       Often when working on responsive layouts, it's useful to adjust styles
       along a singular dimension – such as font-size, margin, padding, and
       width. Instead of manually managing media queries and adding nested style
@@ -12,11 +13,11 @@ const Page = () => (
       shorthand syntax for adding responsive styles with a mobile-first
       approach. While this syntax can seem odd at first, it can become a
       powerful way to manage responsive typography and layouts.
-    </p>
-    <p>
+    </Text>
+    <Text>
       The following components should take 100% of the width on mobile,
       otherwise they should only take 50% each
-    </p>
+    </Text>
     <Box width={[1, 1 / 2]} backgroundColor="red">
       Component 1
     </Box>
@@ -24,13 +25,13 @@ const Page = () => (
       Component 2
     </Box>
 
-    <h2>Tasks</h2>
-    <h3>Task 1</h3>
+    <Typography variant="h2">Tasks</Typography>
+    <Typography variant="h3">Task 1</Typography>
 
-    <p>
+    <Text>
       The following components should behave like the previous one except that
       they should only display their background color on mobile:
-    </p>
+    </Text>
     <Box width={[1, 1 / 2]} backgroundColor="red">
       Component 1
     </Box>

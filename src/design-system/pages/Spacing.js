@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { typography, color, space } from "styled-system";
 
+import Typography, { Text } from "../components/data-display/Typography";
+import List, { Item } from "../components/layout/List";
+
 const Box = styled.div`
   ${typography}
   ${color}
@@ -10,73 +13,73 @@ const Box = styled.div`
 
 const Page = () => (
   <div>
-    <h1>Spacing</h1>
-    <p>
+    <Typography variant="h1">Spacing</Typography>
+    <Text>
       There are different set of functions that can use the space defined in the
       theme, like <code>space</code>, <code>layout</code> or{" "}
       <code>postion</code>:
-    </p>
-    <p>
+    </Text>
+    <Text>
       We are going to start with the <code>space</code> utility. The layout
       utility includes style props for:
-    </p>
-    <ul>
-      <li>
+    </Text>
+    <List>
+      <Item>
         <code>width</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>height</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>display</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>minWidth</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>minHeight</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>maxWidth</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>maxHeight</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>size</code>
-      </li>
-      <li>
+      </Item>
+      <Item>
         <code>verticalAlign</code>
-      </li>
-    </ul>
-    <p>
+      </Item>
+    </List>
+    <Text>
       We are going to start with the <code>layout</code> utility. We have
       imported it from <code>styled-system</code> and included it in our new Box
       component defined in <code>src/pages/Spacing.js</code>
-    </p>
-    <h2>Tasks</h2>
-    <h3>Task 1</h3>
-    <p>
+    </Text>
+    <Typography variant="h2">Tasks</Typography>
+    <Typography variant="h3">Task 1</Typography>
+    <Text>
       Go to <code>src/pages/Spacing.js</code> and add a 4rem padding to the
       following Box using the space defined in the theme. Hint you can use the
       props <code>p</code> or <code>padding</code>
-    </p>
+    </Text>
     <Box>Hello padding</Box>
-    <h3>Task 2</h3>
-    <p>
+    <Typography variant="h3">Task 2</Typography>
+    <Text>
       Go to <code>src/pages/Spacing.js</code> and a padding of 4rem on the left
       and right, and 0 on the top and bottom to the following Box using the
       space defined in the theme. Hint you need to use the props <code>px</code>{" "}
       and <code>py</code>
-    </p>
+    </Text>
     <Box>Hello padding</Box>
-    <h3>Task 3</h3>
-    <p>
+    <Typography variant="h3">Task 3</Typography>
+    <Text>
       Go to <code>src/pages/Spacing.js</code> and a padding of 4rem on the left
       and right, 0 on the top and 3rem on bottom to the following Box using the
       space defined in the theme. Hint you need to use the props <code>px</code>{" "}
       , <code>pb</code>, and <code>pt</code>
-    </p>
+    </Text>
     <Box>Hello padding</Box>
   </div>
 );
