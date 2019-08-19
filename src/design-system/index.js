@@ -11,6 +11,9 @@ import MyBoxIsNotADivPage from "./pages/MyBoxIsNotADiv";
 import ResponsiveStylesPage from "./pages/ResponsiveStyles";
 import VariantsPage from "./pages/Variants";
 import ImagePage from "./pages/atoms/Image";
+import TypographyAtomsPage from "./pages/atoms/Typography";
+import LinkPage from "./pages/atoms/Link";
+import CardPage from "./pages/atoms/Card";
 
 // const ImagePage = importMDX.sync("./components/data-display/Image.mdx");
 
@@ -30,12 +33,13 @@ const Index = ({ match }) => (
       component={ResponsiveStylesPage}
     />
     <Route path={`${match.url}/variant-props`} component={VariantsPage} />
-    <Route path={`${match.url}/components/image`} component={ImagePage} />
-
-    <Route path={`${match.url}/components/image`} component={ImagePage} />
-    <Route path={`${match.url}/components/link`} component={ImagePage} />
-    <Route path={`${match.url}/components/card`} component={ImagePage} />
-    <Route path={`${match.url}/components/typography`} component={ImagePage} />
+    <Route path={`${match.url}/atoms/image`} component={ImagePage} />
+    <Route path={`${match.url}/atoms/card`} component={CardPage} />
+    <Route
+      path={`${match.url}/atoms/typography`}
+      component={TypographyAtomsPage}
+    />
+    <Route path={`${match.url}/atoms/link`} component={LinkPage} />
   </Switch>
 );
 
@@ -87,13 +91,13 @@ export const Menu = ({ path }) => (
               <Link to={`${path}/atoms/image`}>Image</Link>
             </Item>
             <Item>
+              <Link to={`${path}/atoms/card`}>Card</Link>
+            </Item>
+            <Item>
               <Link to={`${path}/atoms/typography`}>Typography</Link>
             </Item>
             <Item>
               <Link to={`${path}/atoms/link`}>Link</Link>
-            </Item>
-            <Item>
-              <Link to={`${path}/atoms/card`}>Card</Link>
             </Item>
           </List>
         </Item>

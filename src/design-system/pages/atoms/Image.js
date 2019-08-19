@@ -1,19 +1,21 @@
 import React from "react";
 import Image from "../../components/data-display/Image";
+import Typography, { Text } from "../../components/data-display/Typography";
+import List, { Item } from "../../components/layout/List";
 
 const Page = () => (
   <React.Fragment>
-    <h1>Image</h1>
-    <p>
+    <Typography variant="h1">Image</Typography>
+    <Text>
       Create an Image component in{" "}
       <code>src/design-system/components/data-display/Image.js</code> composing
       it with the Box component and adding a margin bottom of 0.9rem using a
       prop. Hints, use:
-    </p>
-    <ul>
-      <li>1) styled(Box) </li>
-      <li>2) Image.defaltProps;</li>
-    </ul>
+    </Text>
+    <List>
+      <Item>1) styled(Box) </Item>
+      <Item>2) Image.defaultProps</Item>
+    </List>
     <Image
       maxWidth="100px"
       src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"

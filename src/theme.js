@@ -52,6 +52,11 @@ const theme = {
   fontWeights: {
     normal: "400",
     bold: "800"
+  },
+  shadows: {
+    thin: "0 2px 2px 0 rgba(0, 0, 0, 0.45), 0 0 2px 0 rgba(0, 0, 0, 0.12)",
+    light: "0 18px 29px -2px rgba(0, 0, 0, 0.26)",
+    bold: "rgb(74, 74, 74) 0px 0px 1px"
   }
 };
 
