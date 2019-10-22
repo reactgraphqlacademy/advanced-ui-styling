@@ -21,3 +21,5 @@ cypress
 
 # Env
 .env
+
+.docz
