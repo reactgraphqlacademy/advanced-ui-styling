@@ -23,7 +23,7 @@ const App = () => (
         <Box width="400px">
           <Tabs
             defaultActiveTab={
-              location.pathname.indexOf("design-system") < 0 ? "adv-ui" : "ds"
+              location.pathname.indexOf("design-system") > 0 ? "adv-ui" : "ds"
             }
           >
             <TabList mb={3}>
