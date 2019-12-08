@@ -5,5 +5,6 @@ import Button from "./";
 storiesOf("Forms | Buttons", module)
   .add("Default button", () => <Button>Click me</Button>)
   .add("Button Primary", () => <Button primary>Click me</Button>)
+  .add("Button Secondary", () => <Button secondary>Click me</Button>)
   .add("Button Large", () => <Button large>Click me</Button>)
   .add("Button Block", () => <Button block>Click me</Button>);

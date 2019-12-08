@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Alert from "./";
 
-storiesOf("Alerts", module)
+storiesOf("Feedback | Alerts", module)
   .add("Default alert", () => <Alert>Default Alert</Alert>)
   .add("Primary alert", () => <Alert primary>Primary Alert</Alert>)
   .add("Secondary alert", () => <Alert secondary>Secondary Alert</Alert>)

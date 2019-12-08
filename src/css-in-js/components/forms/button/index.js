@@ -30,6 +30,14 @@ const Button = styled.button`
     border-color: #2e6da4;
   `}
 
+   ${props =>
+     props.secondary &&
+     `
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+  `}
+
   ${props =>
     props.large &&
     `
@@ -51,6 +59,12 @@ const Button = styled.button`
 //     color: #fff;
 //     background-color: #337ab7;
 //     border-color: #2e6da4;
+// }
+
+// .btn-secondary {
+//     color: #fff;
+//     background-color: #6c757d;
+//     border-color: #6c757d;
 // }
 
 // .btn-lg {
