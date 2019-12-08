@@ -47,8 +47,9 @@ Task 1. Using styled-components, implement some Bootstrap button styles in `src/
 
 1. Default, no props required.
 2. Button primary when prop `primary={true}`
-3. Button large when prop `large={true}`
-4. Button block when prop `block={true}`
+3. Button secondary when prop `secondary={true}`
+4. Button large when prop `large={true}`
+5. Button block when prop `block={true}`
 
 **Final questions:**. The default `<Button />`(meaning no props) doesn't have a border.
 
