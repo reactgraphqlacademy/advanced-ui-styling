@@ -66,10 +66,10 @@ You need to have `node` and `npm` installed on your computer.
 ## Getting started
 
 ```console
-git clone git@github.com:reactgraphqlacademy/design-systems-react.git
-cd design-systems-react
+git clone git@github.com:reactgraphqlacademy/advanced-ui-styling.git
+cd advanced-ui-styling
 npm install
-npm start
+npm run storybook
 ```
 
 ## Articles and links
