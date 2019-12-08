@@ -8,9 +8,9 @@ The goal of this exercise is to learn how to style React applications in an idom
 
 ### Input component
 
-Use styled-components to implement the style for the `Input` component defined in `src/component-based-styling/components/Input/index`.
+Use styled-components to implement the style for the `Input` component defined in `src/css-in-js/components/Input/index`.
 
-There should be three stories in `src/component-based-styling/components/Input/input.stories.js` that show the following 3 styles.
+There should be three stories in `src/css-in-js/components/Input/input.stories.js` that show the following 3 styles.
 
 1. The default Input style should be:
 
@@ -43,14 +43,24 @@ There should be three stories in `src/component-based-styling/components/Input/i
 
 #### Button component
 
-Task 1. Using styled-components, implement some Bootstrap button styles in `src/component-based-styling/components/Form/Button` using the styles defined in that file. Then create the following stories in `src/component-based-styling/components/button/button.stories.js`:
+Task 1. Using styled-components, implement some Bootstrap button styles in `src/css-in-js/components/Form/Button` using the styles defined in that file. Then create the following stories in `src/css-in-js/components/button/button.stories.js`:
 
 1. Default, no props required.
 2. Button primary when prop `primary={true}`
-3. Button large when prop `large={true}`
-4. Button block when prop `block={true}`
+3. Button secondary when prop `secondary={true}`
+4. Button large when prop `large={true}`
+5. Button block when prop `block={true}`
 
-**Bonus question**. The default <Button /> (meaning no props) doesn't have a border, why? Should we fix that? How would you fix it? Discuss with your peers. Hint, what's the default style for the [Bootstrap button](https://getbootstrap.com/docs/4.3/components/buttons/)?
+**Final questions:**. The default `<Button />`(meaning no props) doesn't have a border.
+
+- Why? Should we change the CSS? Discuss with your peers. Hint, what's the default style for the [Bootstrap button](https://getbootstrap.com/docs/4.3/components/buttons/)?
+- Would the following code snippet fix the problem?
+
+```
+Button.defaultProps = {
+  secondary: true
+};
+```
 
 **Bonus exercise.** Implement the the component and stories for the Bootstrap Alert component [https://getbootstrap.com/docs/4.3/components/alerts/](https://getbootstrap.com/docs/4.3/components/alerts/)
 
@@ -66,13 +76,18 @@ You need to have `node` and `npm` installed on your computer.
 ## Getting started
 
 ```console
-git clone git@github.com:reactgraphqlacademy/design-systems-react.git
-cd design-systems-react
+git clone git@github.com:reactgraphqlacademy/advanced-ui-styling.git
+cd advanced-ui-styling
 npm install
-npm start
+npm run storybook
 ```
 
 ## Articles and links
+
+- [ReactJS article on Styling in React](https://reactgraphql.academy/react/styling-in-react/)
+- [https://www.styled-components.com/](https://www.styled-components.com/)
+- [https://github.com/css-modules/webpack-demo](https://github.com/css-modules/webpack-demo)
+- [https://github.com/css-modules/css-modules/](https://github.com/css-modules/css-modules/)
 
 ## License
 

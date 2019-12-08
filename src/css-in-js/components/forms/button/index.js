@@ -6,6 +6,12 @@ import React from "react";
 //     border-color: #2e6da4;
 // }
 
+// .btn-secondary {
+//     color: #fff;
+//     background-color: #6c757d;
+//     border-color: #6c757d;
+// }
+
 // .btn-lg {
 //     padding: 10px 16px;
 //     font-size: 18px;
