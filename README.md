@@ -84,6 +84,11 @@ npm run storybook
 
 ## Articles and links
 
+- [ReactJS article on Styling in React](https://reactgraphql.academy/react/styling-in-react/)
+- [https://www.styled-components.com/](https://www.styled-components.com/)
+- [https://github.com/css-modules/webpack-demo](https://github.com/css-modules/webpack-demo)
+- [https://github.com/css-modules/css-modules/](https://github.com/css-modules/css-modules/)
+
 ## License
 
 This material is available for private, non-commercial use under the [GPL version 3](http://www.gnu.org/licenses/gpl-3.0-standalone.html).
