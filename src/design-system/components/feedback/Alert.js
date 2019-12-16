@@ -1,27 +1,30 @@
-import React from "react";
 import styled from "styled-components";
+import { variant } from "styled-system";
 import Box from "../layout/Box";
 
-/*
-Alert variant styles:
+const variantProps = {
+  info: {
+    backgroundColor: "lightBlue",
+    borderLeftColor: "blue"
+  },
+  warning: {
+    borderLeftColor: "orange",
+    backgroundColor: "yellow"
+  }
+};
 
-info:
-- padding: 3
-- margint top and bottom: 2
-- border left width: 3px
-- border left color: blue
-- border left style: solid
-- background-color: lightBlue
+const Alert = styled(Box)`
+  ${variant({
+    variants: variantProps
+  })}
+`;
 
-warning:
-- padding: 3
-- margint top and bottom: 2
-- border left width: 3px
-- border left color: orange
-- border left style: solid
-- background-color: yellow
-*/
-
-const Alert = styled("div")``;
+Alert.defaultProps = {
+  p: 3,
+  mt: 2,
+  mb: 2,
+  borderLeftStyle: "solid",
+  borderLeftWidth: "3px"
+};
 
 export default Alert;
