@@ -1,27 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  fontFamily,
-  fontSize,
-  fontWeight,
-  lineHeight,
-  letterSpacing,
-  textAlign,
-  fontStyle,
-  typography
-} from "styled-system";
+import { typography } from "styled-system";
 
 import Typography, { Text } from "../components/data-display/Typography";
 import List, { Item } from "../components/layout/List";
 
 const Box = styled.div`
-  ${fontFamily}
-  ${lineHeight}
-  ${fontStyle}
-  ${fontSize}
-  ${fontWeight}
-  ${letterSpacing}
-  ${textAlign}
+  ${typography}
 `;
 
 const Page = () => (

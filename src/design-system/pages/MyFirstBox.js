@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Typography, { Text } from "../components/data-display/Typography";
 
 const fontFamily = ({ theme, fontFamily }) => {
-  return `font-family: ${`return here a font from the theme.fonts based on the font argument`};`;
+  return `font-family: ${theme.fonts[fontFamily]};`;
 };
 
 const Box = styled.div`

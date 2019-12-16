@@ -4,12 +4,15 @@ import { typography, color, space, layout, flexbox } from "styled-system";
 import Typography, { Text } from "../components/data-display/Typography";
 import List, { Item } from "../components/layout/List";
 
-const Flex = styled.div`
+const Box = styled.div`
     ${space}
     ${color}
     ${typography}
     ${layout}
-    ${flexbox}
+`;
+
+const Flex = styled(Box)`
+  ${flexbox}
 `;
 
 Flex.defaultProps = {
