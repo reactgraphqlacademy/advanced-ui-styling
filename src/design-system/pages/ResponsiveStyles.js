@@ -32,10 +32,10 @@ const Page = () => (
       The following components should behave like the previous one except that
       they should only display their background color on mobile:
     </Text>
-    <Box width={[1, 1 / 2]} backgroundColor="red">
+    <Box width={[1, 1 / 2]} backgroundColor={["red", "transparent"]}>
       Component 1
     </Box>
-    <Box width={[1, 1 / 2]} backgroundColor="blue">
+    <Box width={[1, 1 / 2]} backgroundColor={["blue", "transparent"]}>
       Component 2
     </Box>
   </div>
