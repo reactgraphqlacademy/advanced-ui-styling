@@ -10,7 +10,9 @@ Item.defaultProps = {
   m: 0
 };
 
-const List = styled(Box)``;
+const List = styled(Box)`
+  list-style: none;
+`;
 
 List.defaultProps = {
   as: "ul",
