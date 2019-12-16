@@ -9,7 +9,7 @@ const Box = styled.div`
   ${border}
 `;
 Box.defaultProps = {
-  font: "monospace"
+  fontFamily: "barlow"
 };
 
 export default Box;

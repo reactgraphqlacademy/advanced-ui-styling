@@ -8,7 +8,8 @@ const theme = {
   fonts: {
     serif: `"Times New Roman", Times, serif;`,
     sansSerif: `Arial, Helvetica, sans-serif;`,
-    monospace: `"Courier New", Courier, monospace`
+    monospace: `"Courier New", Courier, monospace`,
+    barlow: `'Barlow', sans-serif;`
   },
   colors: {
     lightBlue: "#d1ecf1",
