@@ -1,6 +1,24 @@
-## Design Systems with Styled System
+# Design Systems with Styled System
 
 The goal of this exercise is to learn how to style React applications in an idomatic way.
+
+## Prerequisites
+
+You need to be comfortable writing React components and using Styled Components. This exercise assumes you understand the following concepts:
+
+- [Introduction to Thinking in React](https://reactgraphql.academy/react/introduction-to-thinking-in-react/).
+- [Component based style in React](https://reactgraphql.academy/react/styling-in-react/).
+
+You need to have `node` and `npm` installed on your computer.
+
+## Getting started
+
+```console
+git clone git@github.com:reactgraphqlacademy/advanced-ui-styling.git
+cd advanced-ui-styling
+npm install
+npm run storybook
+```
 
 # Exercise
 
@@ -64,23 +82,6 @@ Button.defaultProps = {
 
 **Bonus exercise.** Implement the the component and stories for the Bootstrap Alert component [https://getbootstrap.com/docs/4.3/components/alerts/](https://getbootstrap.com/docs/4.3/components/alerts/)
 
-## Prerequisites
-
-You need to be comfortable writing React components and using Styled Components. This exercise assumes you understand the following concepts:
-
-- [Introduction to Thinking in React](https://reactgraphql.academy/react/introduction-to-thinking-in-react/).
-- [Component based style in React](https://reactgraphql.academy/react/styling-in-react/).
-
-You need to have `node` and `npm` installed on your computer.
-
-## Getting started
-
-```console
-git clone git@github.com:reactgraphqlacademy/advanced-ui-styling.git
-cd advanced-ui-styling
-npm install
-npm run storybook
-```
 
 ## Articles and links
 
