@@ -53,6 +53,12 @@ const Page = () => (
       const Image = (&#123;sx, ...rest&#125;) => &lt;Box sx=&#123;&#123;mb:
       1&#125;&#125; as="img" &#123;...rest&#125; />;
     </code>
+    <Typography variant="h2">Note</Typography>
+    <Text>
+      Notice that now you won't have to import styled from styled-components, do
+      the CSS-in-JS library is an implementation detail not specific to this
+      component.
+    </Text>
   </div>
 );
 
