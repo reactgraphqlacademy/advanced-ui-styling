@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { typography, color, space, layout, flexbox } from "styled-system";
 import Typography, { Text } from "../components/data-display/Typography";
 import List, { Item } from "../components/layout/List";
+import Box from "../components/layout/Box";
 
 const Flex = styled.div`
     ${space}
