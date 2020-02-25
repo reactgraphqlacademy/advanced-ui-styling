@@ -65,7 +65,6 @@ const Page = () => (
         <code>order</code>
       </Item>
     </List>
-    <Typography variant="h2">Tasks</Typography>
     <Text>
       Remeber, every Styled System utility that we add to our Box will increase
       the time required to calculate its style. It's better to create another
@@ -73,6 +72,7 @@ const Page = () => (
       don't need to use any flexbox property then we use the Box component. When
       we need to add flexbox properties then we use the Flex component.
     </Text>
+    <Typography variant="h2">Tasks</Typography>
     <Text>
       If you go to <code>src/pages/Flex.js</code> and look at our implementation
       you'll notice that our Flex component is adding <code>typography</code>,{" "}
@@ -83,8 +83,8 @@ const Page = () => (
     <Text>
       Instead of adding the <code>typography</code>, <code>color</code>,{" "}
       <code>layout</code>, and <code>space</code> in our Flex component you
-      should extend the Box component and only add <code>flexbox</code> to this
-      case. Hint:{" "}
+      should extend the Box component (already imported at the top of the file)
+      and only add <code>flexbox</code> to this case. Hint:{" "}
       <a
         target="_blank"
         href="https://www.styled-components.com/docs/basics#extending-styles"
