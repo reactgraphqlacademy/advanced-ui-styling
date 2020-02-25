@@ -26,7 +26,8 @@ const Page = () => (
       different:
     </Text>
     <Box style={{ color: "blue" }}>Default font</Box>
-    <Box color="blue">React blue!</Box>
+    <Box color="blue">React blue</Box>
+    <Box color="primary">Secondary color</Box>
   </div>
 );
 
