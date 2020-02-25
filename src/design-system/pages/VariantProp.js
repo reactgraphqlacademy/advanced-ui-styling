@@ -9,18 +9,18 @@ Button example
 */
 const buttonVariantProps = {
   primary: {
-    backgroundColor: "blue",
+    backgroundColor: "primary",
     p: 2 // p:2 is the same in both variants, how can we fix that?
   },
   secondary: {
-    backgroundColor: "pink",
+    backgroundColor: "secondary",
     p: 2 // p:2 is the same in both variants, how can we fix that?
   }
 };
 
 const StyledButton = styled(Box)``;
 const Button = ({ variant, ...rest }) => (
-  <StyledButton {...variant && buttonVariantProps[variant]} {...rest} />
+  <StyledButton {...(variant && buttonVariantProps[variant])} {...rest} />
 );
 Button.defaultProps = {
   as: "button",
@@ -42,7 +42,7 @@ Exercise:
 */
 const Page = () => (
   <div>
-    <Typography variant="h1">Variants</Typography>
+    <Typography variant="h1">Variant prop</Typography>
     <Typography variant="h2">Example</Typography>
     <Text>
       <Button>I'm a primary button</Button>

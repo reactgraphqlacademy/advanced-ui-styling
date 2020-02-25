@@ -18,14 +18,14 @@ const Page = () => (
       <Item>Padding 3 from the theme on desktop and padding 1 on mobile</Item>
       <Item>Border radius 2 from the theme</Item>
       <Item>overflow hidden</Item>
-      <Item>background color pink</Item>
+      <Item>background color primary</Item>
       <Item>display inline-block</Item>
     </List>
     <Card>
       <Image
         style={{ maxWidth: "300px" }}
         maxWidth="100px"
-        src="https://reactgraphql.academy/static/d874cfe898772f874abeeaed5bd95a6e/2f7e7/mentorship.jpg"
+        src="https://reactgraphql.academy/static/d874cfe898772f874abeeaed5bd95a6e/a7715/mentorship.jpg"
       />
       <Text>React GraphQL Academy Coaches</Text>
     </Card>

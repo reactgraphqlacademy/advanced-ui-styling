@@ -11,12 +11,13 @@ import SpacingPage from "./pages/Spacing";
 import FlexPage from "./pages/Flex";
 import MyBoxIsNotADivPage from "./pages/MyBoxIsNotADiv";
 import ResponsiveStylesPage from "./pages/ResponsiveStyles";
-import VariantsPage from "./pages/Variants";
-import ImagePage from "./pages/atoms/Image";
-import TypographyAtomsPage from "./pages/atoms/Typography";
-import LinkPage from "./pages/atoms/Link";
-import CardPage from "./pages/atoms/Card";
-import ListPage from "./pages/atoms/List";
+import VariantsPage from "./pages/VariantProp";
+import ImagePage from "./pages/ui-library/Image";
+import TypographyAtomsPage from "./pages/ui-library/Typography";
+import LinkPage from "./pages/ui-library/Link";
+import CardPage from "./pages/ui-library/Card";
+import ListPage from "./pages/ui-library/List";
+import SxPropPage from "./pages/bonus";
 
 // const ImagePage = importMDX.sync("./components/data-display/Image.mdx");
 
@@ -36,14 +37,15 @@ const Index = ({ match }) => (
       component={ResponsiveStylesPage}
     />
     <Route path={`${match.url}/variant-props`} component={VariantsPage} />
-    <Route path={`${match.url}/atoms/image`} component={ImagePage} />
-    <Route path={`${match.url}/atoms/card`} component={CardPage} />
+    <Route path={`${match.url}/ui-library/image`} component={ImagePage} />
+    <Route path={`${match.url}/ui-library/card`} component={CardPage} />
     <Route
-      path={`${match.url}/atoms/typography`}
+      path={`${match.url}/ui-library/typography`}
       component={TypographyAtomsPage}
     />
-    <Route path={`${match.url}/atoms/link`} component={LinkPage} />
-    <Route path={`${match.url}/atoms/list`} component={ListPage} />
+    <Route path={`${match.url}/ui-library/link`} component={LinkPage} />
+    <Route path={`${match.url}/ui-library/list`} component={ListPage} />
+    <Route path={`${match.url}/sx-prop`} component={SxPropPage} />
   </Switch>
 );
 
@@ -83,48 +85,30 @@ export const Menu = ({ path }) => (
       <Link to={`${path}/responsive-styles`}>Responsive styles</Link>
     </Item>
     <Item>
-      <Link to={`${path}/variant-props`}>Prop based variants</Link>
+      <Link to={`${path}/variant-props`}>Variant prop</Link>
     </Item>
     <Item>
-      <Text>Components</Text>
+      <Text>My UI Component Library</Text>
       <List>
         <Item>
-          <Text>Atoms</Text>
-          <List>
-            <Item>
-              <Link to={`${path}/atoms/image`}>Image</Link>
-            </Item>
-            <Item>
-              <Link to={`${path}/atoms/link`}>Link</Link>
-            </Item>
-            <Item>
-              <Link to={`${path}/atoms/list`}>List</Link>
-            </Item>
-            <Item>
-              <Link to={`${path}/atoms/card`}>Card</Link>
-            </Item>
-            <Item>
-              <Link to={`${path}/atoms/typography`}>Typography</Link>
-            </Item>
-          </List>
+          <Link to={`${path}/ui-library/image`}>Image</Link>
         </Item>
         <Item>
-          <Text>Molecules</Text>
-          <List>
-            <Item>
-              <Link to={`${path}/molecule/profile-card`}>Profile Card</Link>
-            </Item>
-          </List>
+          <Link to={`${path}/ui-library/link`}>Link</Link>
         </Item>
         <Item>
-          <Text>Organism</Text>
-          <List>
-            <Item>
-              <Link to={`${path}/organism/users`}>Users component</Link>
-            </Item>
-          </List>
+          <Link to={`${path}/ui-library/list`}>List</Link>
+        </Item>
+        <Item>
+          <Link to={`${path}/ui-library/card`}>Card</Link>
+        </Item>
+        <Item>
+          <Link to={`${path}/ui-library/typography`}>Typography</Link>
         </Item>
       </List>
+    </Item>
+    <Item>
+      <Link to={`${path}/sx-prop`}>Bonus: sx prop</Link>
     </Item>
   </List>
 );

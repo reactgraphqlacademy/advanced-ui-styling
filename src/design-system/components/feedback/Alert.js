@@ -11,7 +11,7 @@ info:
 - border left width: 3px
 - border left color: blue
 - border left style: solid
-- background-color: lightBlue
+- background-color: secondary
 
 warning:
 - padding: 3

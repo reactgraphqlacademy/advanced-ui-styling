@@ -1,7 +1,3 @@
-const COLOR_BLUE = "#07c";
-const COLOR_GREEN = "#3f714c";
-const COLOR_BACKGROUND = "#f6f6ff";
-
 // https://github.com/system-ui/theme-specification
 
 const theme = {
@@ -11,13 +7,14 @@ const theme = {
     monospace: `"Courier New", Courier, monospace`
   },
   colors: {
-    lightBlue: "#d1ecf1",
-    pink: "#AA00CC",
+    // it's not recommended to use the color name as key, it's better to use 'text', 'primary', etc
     white: "#fff",
     lightGrey: "#eee",
     yellow: "#ffeeba",
-    orange: "#FFA500",
-    grey: "#6A6C6E"
+    // it's better to abstract the color name to a "purpose". Then you can do things like "theme modes" https://github.com/system-ui/theme-ui/blob/master/examples/dark-mode/src/theme.js#L8
+    text: "#4a4a4a",
+    primary: "#AA00CC",
+    secondary: "#d1ecf1"
   },
   radii: [0, 2, 4, 16],
   space: [

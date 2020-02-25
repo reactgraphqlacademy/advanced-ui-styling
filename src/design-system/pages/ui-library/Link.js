@@ -17,7 +17,7 @@ const Page = () => (
       <Item>
         It should be rendered 'as' the 'GenericLink' defined in the same file
       </Item>
-      <Item>The color should be pink</Item>
+      <Item>The color should be primary</Item>
     </List>
     <Link to="/">Home page link</Link>
   </React.Fragment>

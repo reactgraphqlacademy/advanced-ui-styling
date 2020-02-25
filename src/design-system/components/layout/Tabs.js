@@ -54,7 +54,7 @@ const tabListVariantProps = {
   },
   default: {
     backgroundColor: "grey",
-    borderBottomColor: "pink",
+    borderBottomColor: "primary",
     color: "white",
     cursor: "pointer"
   }
@@ -74,7 +74,7 @@ export const Tab = ({ name, onClick, children, variant, ...rest }) => (
   <StyledTab
     role="tab"
     onClick={onClick}
-    {...variant && tabListVariantProps[variant]}
+    {...(variant && tabListVariantProps[variant])}
     {...rest}
   >
     {children}
