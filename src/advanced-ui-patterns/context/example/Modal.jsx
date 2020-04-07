@@ -1,53 +1,38 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { useState } from "react";
 import { Modal as BootstrapModal } from "react-bootstrap";
 
 export const ModalContext = React.createContext();
 
-class Modal extends React.Component {
-  constructor() {
-    super();
+const Modal = ({ children }) => {
+  const [content, setContent] = useState(null);
+  const isOpen = !!content;
 
-    this.state = {
-      isOpen: false,
-      content: null,
-      backdrop: true
-    };
-  }
-
-  showModal = (content, backdrop = true) => {
-    this.setState({
-      content,
-      isOpen: true,
-      backdrop
-    });
+  const showModal = (content) => {
+    setContent(content);
   };
 
-  hideModal = () => {
-    this.setState({ isOpen: false });
+  const hideModal = () => {
+    setContent(null);
   };
 
-  render() {
-    const { showModal, hideModal, state, props } = this;
-    const { Provider } = ModalContext;
+  return (
+    <ModalContext.Provider value={{ isOpen, showModal, hideModal }}>
+      <BootstrapModal show={isOpen} onHide={hideModal}>
+        {content}
+      </BootstrapModal>
+      {children}
+    </ModalContext.Provider>
+  );
+};
 
-    return (
-      <Provider value={{ ...state, showModal, hideModal }}>
-        <BootstrapModal
-          backdrop={state.backdrop}
-          show={state.isOpen}
-          onHide={hideModal}
-        >
-          {state.content}
-        </BootstrapModal>
-        {props.children}
-      </Provider>
-    );
+export const useModal = () => {
+  const context = React.useContext(ModalContext);
+
+  if (!context) {
+    throw new Error("We could not find a Modal context");
   }
-}
 
-Modal.propTypes = {
-  children: PropTypes.object
+  return context;
 };
 
 export default Modal;

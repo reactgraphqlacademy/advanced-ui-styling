@@ -3,15 +3,15 @@ import styled, { ThemeProvider } from "styled-components";
 // import theme from "./theme";
 
 /*
-  Exercise TODO:
-  - wrap the whole component with the `ThemeProvider` from "styled-components".
-  - create a simple theme in `theme.js` and import it. (`import theme from './theme'`)
-  - this theme should have the base colors for your app.
+  Exercise 🏋️‍♀️:
+  1- Wrap the Alert component inside the ThemingExercise component at the bottom of this file with the `ThemeProvider` from "styled-components" https://styled-components.com/docs/advanced#theming.
+  2- Add some colors in your theme in `./theme.js` and import it (the import is commented out)
 */
 
 /*
-  remember that you can call a function inside styled-components:
-  color: ${props => YOUR EXPRESSION};
+  Hint 🕵️‍♀️: You can call a function inside a template literal (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals),
+  styled-components will call that function with the props that are passed to it from the parent component
+  e.g. color: ${props => SOME_EXPRESSION};
 */
 const Alert = styled("div")`
   border-radius: 8px;
@@ -23,12 +23,11 @@ const Alert = styled("div")`
   background-color: white;
 `;
 
-/*
-  TODO: you need to "wrap" your component with the `ThemeProvider` component
-  - remember that you need to pass a `theme` to this provider.
-  - documentation: https://www.styled-components.com/docs/advanced#theming
-*/
-
-const ThemingExercise = () => <Alert>Hello I'm a Alert</Alert>;
+const ThemingExercise = () => (
+  /*
+    Hint 🕵️‍♀️: Add the ThemeProvider here
+  */
+  <Alert>Hello I'm a Alert</Alert>
+);
 
 export default ThemingExercise;
