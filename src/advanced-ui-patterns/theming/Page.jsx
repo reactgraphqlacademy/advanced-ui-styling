@@ -1,40 +1,44 @@
 import React from "react";
 import Example from "./example";
 import Exercise from "./exercise";
+import Typography, {
+  Text,
+} from "../../design-system/components/data-display/Typography";
+import Link from "../../design-system/components/navigation/Link";
 
-const Page = (props) => (
-  <div>
-    <h2>Theming</h2>
-    <p>
+const Page = () => (
+  <React.Fragment>
+    <Typography variant="h2">Theming</Typography>
+    <Text>
       styled-components has full theming support with the{" "}
       <code>
-        <a
-          href="https://styled-components.com/docs/advanced#theming"
+        <Link
+          to="https://styled-components.com/docs/advanced#theming"
           target="_blank"
         >
           ThemeProvider
-        </a>
+        </Link>
       </code>{" "}
       component. The ThemeProvider component provides a theme object to all the
       React components underneath via the context API. The `styled` function
       from styled-components injects a prop called `theme` with the theme
       object.
-    </p>
-    <p>
+    </Text>
+    <Text>
       Using a theme helps us share values and styles throughout different
       components. You can see the theme we are using in this example here
       <code>src/advanced-ui-patterns/theming/example/theme.js</code>.
-    </p>
-    <h3>Example</h3>
+    </Text>
+    <Typography variant="h3">Example</Typography>
     <Example />
     <hr />
-    <h3>Exercise</h3>
-    <p>
+    <Typography variant="h3">Exercise</Typography>
+    <Text>
       Go to <code>src/advanced-ui-patterns/theming/exercise/index</code> and
       follow the instructions of the exercise 🏋️‍♀️
-    </p>
+    </Text>
     <Exercise />
-  </div>
+  </React.Fragment>
 );
 
 export default Page;

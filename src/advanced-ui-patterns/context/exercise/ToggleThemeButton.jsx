@@ -9,11 +9,11 @@ const StyledButton = styled.button`
   background-color: black;
 `;
 
-const ToggleButton = ({ children, ...rest }) => {
+const ToggleButton = (props) => {
   const onClick = () =>
     console.log("Hint 🕵️‍♀️, replace me using the useTheme custom hook");
 
-  return <StyledButton onClick={onClick} {...rest} />;
+  return <StyledButton onClick={onClick} {...props} />;
 };
 
 export default ToggleButton;
