@@ -1,7 +1,3 @@
-const COLOR_BLUE = "#07c";
-const COLOR_GREEN = "#3f714c";
-const COLOR_BACKGROUND = "#f6f6ff";
-
 // https://github.com/system-ui/theme-specification
 
 const theme = {
@@ -9,17 +5,17 @@ const theme = {
     serif: `"Times New Roman", Times, serif;`,
     sansSerif: `Arial, Helvetica, sans-serif;`,
     monospace: `"Courier New", Courier, monospace`,
-    barlow: `'Barlow', sans-serif;`
+    barlow: `'Barlow', sans-serif;`,
   },
   colors: {
-    lightBlue: "#d1ecf1",
-    pink: "#AA00CC",
+    // it's not recommended to use the color name as key, it's better to use 'text', 'primary', etc
     white: "#fff",
     lightGrey: "#eee",
     yellow: "#ffeeba",
-    orange: "#FFA500",
-    grey: "#6A6C6E",
-    blue: "rgb(97, 218, 251)"
+    // it's better to abstract the color name to a "purpose". Then you can do things like "theme modes" https://github.com/system-ui/theme-ui/blob/master/examples/dark-mode/src/theme.js#L8
+    text: "#4a4a4a",
+    primary: "#AA00CC",
+    secondary: "#d1ecf1",
   },
   radii: [0, 2, 4, 16],
   space: [
@@ -30,7 +26,7 @@ const theme = {
     "1.5rem", // 4
     "2rem", // 5
     "3rem", // 6
-    "4rem" // 7
+    "4rem", // 7
   ],
   fontSizes: [
     "0.8rem", // 0
@@ -40,7 +36,7 @@ const theme = {
     "1.563rem", // 4
     "1.953rem", // 5
     "2.441rem", // 6
-    "2.77rem" // 7
+    "2.77rem", // 7
   ],
   lineHeights: [
     "0", // 0
@@ -49,17 +45,17 @@ const theme = {
     "1.87rem", // 3
     "2rem", // 4
     "2.5rem", // 5
-    "3rem" // 6
+    "3rem", // 6
   ],
   fontWeights: {
     normal: "400",
-    bold: "800"
+    bold: "800",
   },
   shadows: {
     thin: "0 2px 2px 0 rgba(0, 0, 0, 0.45), 0 0 2px 0 rgba(0, 0, 0, 0.12)",
     light: "0 18px 29px -2px rgba(0, 0, 0, 0.26)",
-    bold: "rgb(74, 74, 74) 0px 0px 1px"
-  }
+    bold: "rgb(74, 74, 74) 0px 0px 1px",
+  },
 };
 
 export default theme;

@@ -5,17 +5,17 @@ import Box from "../layout/Box";
 const variantProps = {
   info: {
     backgroundColor: "lightBlue",
-    borderLeftColor: "blue"
+    borderLeftColor: "blue",
   },
   warning: {
     borderLeftColor: "orange",
-    backgroundColor: "yellow"
-  }
+    backgroundColor: "yellow",
+  },
 };
 
 const Alert = styled(Box)`
   ${variant({
-    variants: variantProps
+    variants: variantProps,
   })}
 `;
 
@@ -24,7 +24,7 @@ Alert.defaultProps = {
   mt: 2,
   mb: 2,
   borderLeftStyle: "solid",
-  borderLeftWidth: "3px"
+  borderLeftWidth: "3px",
 };
 
 export default Alert;

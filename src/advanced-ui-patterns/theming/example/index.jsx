@@ -9,12 +9,12 @@ const Button = styled("button")`
   border-radius: 8px;
   font-size: 24px;
   padding: 8px 16px;
-  color: ${props => props.theme.colors.blue};
-  border: 2px solid ${props => props.theme.colors.blue};
+  color: ${(props) => props.theme.colors.primary};
+  border: 2px solid ${(props) => props.theme.colors.primary};
 
   &:hover {
-    color: ${props => props.theme.colors.green};
-    border: 2px solid ${props => props.theme.colors.green};
+    color: ${(props) => props.theme.colors.secondary};
+    border: 2px solid ${(props) => props.theme.colors.secondary};
   }
 `;
 

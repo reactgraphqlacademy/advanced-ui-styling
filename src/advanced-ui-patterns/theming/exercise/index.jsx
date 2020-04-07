@@ -1,18 +1,7 @@
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
-// import theme from "./theme";
+import theme from "./theme";
 
-/*
-  Exercise TODO:
-  - wrap the whole component with the `ThemeProvider` from "styled-components".
-  - create a simple theme in `theme.js` and import it. (`import theme from './theme'`)
-  - this theme should have the base colors for your app.
-*/
-
-/*
-  remember that you can call a function inside styled-components:
-  color: ${props => YOUR EXPRESSION};
-*/
 const Alert = styled("div")`
   border-radius: 8px;
   padding: 16px;
@@ -20,15 +9,16 @@ const Alert = styled("div")`
   font-size: 18px;
   font-weight: 800;
   text-align: center;
-  background-color: white;
+  background-color: ${(props) => {
+    console.log("aaaa", props);
+    return props.theme.colors.background;
+  }};
 `;
 
-/*
-  TODO: you need to "wrap" your component with the `ThemeProvider` component
-  - remember that you need to pass a `theme` to this provider.
-  - documentation: https://www.styled-components.com/docs/advanced#theming
-*/
-
-const ThemingExercise = () => <Alert>Hello I'm a Alert</Alert>;
+const ThemingExercise = () => (
+  <ThemeProvider theme={theme}>
+    <Alert>Hello I'm a Alert</Alert>
+  </ThemeProvider>
+);
 
 export default ThemingExercise;
