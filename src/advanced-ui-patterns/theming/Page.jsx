@@ -20,13 +20,13 @@ const Page = () => (
         </Link>
       </code>{" "}
       component. The ThemeProvider component provides a theme object to all the
-      React components underneath via the context API. The `styled` function
-      from styled-components injects a prop called `theme` with the theme
-      object.
+      React components underneath via the context API. The <code>styled</code>{" "}
+      function from styled-components injects a prop called <code>theme</code>{" "}
+      with the theme object.
     </Text>
     <Text>
       Using a theme helps us share values and styles throughout different
-      components. You can see the theme we are using in this example here
+      components. You can see the theme we are using in this example here{" "}
       <code>src/advanced-ui-patterns/theming/example/theme.js</code>.
     </Text>
     <Typography variant="h3">Example</Typography>
