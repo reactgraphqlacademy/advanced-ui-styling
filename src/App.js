@@ -1,14 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "normalize.css";
-import Tabs, {
-  TabPanel,
-  Tab,
-  TabList
-} from "./design-system/components/layout/Tabs";
 import DesignSystem, { Menu as DesignSystemsMenu } from "./design-system";
 import AdvancedUIPatterns, {
-  Menu as AdvUIPatternsMenu
+  Menu as AdvUIPatternsMenu,
 } from "./advanced-ui-patterns";
 import Box from "./design-system/components/layout/Box";
 import Flex from "./design-system/components/layout/Flex";
@@ -26,22 +21,8 @@ const App = () => (
       return (
         <Flex>
           <Box width="400px">
-            <Tabs
-              defaultActiveTab={
-                location.pathname.indexOf("design-system") < 0 ? "adv-ui" : "ds"
-              }
-            >
-              <TabList mb={3}>
-                <Tab name="ds">Design System</Tab>
-                <Tab name="adv-ui">Adv. UI Patterns</Tab>
-              </TabList>
-              <TabPanel name="ds">
-                <DesignSystemsMenu path={DESIGN_SYSTEMS_PATH} />
-              </TabPanel>
-              <TabPanel name="adv-ui">
-                <AdvUIPatternsMenu path={ADV_UI_PATH} />
-              </TabPanel>
-            </Tabs>
+            <AdvUIPatternsMenu path={ADV_UI_PATH} />
+            <DesignSystemsMenu path={DESIGN_SYSTEMS_PATH} />
           </Box>
           <Flex flex="1">
             <div>

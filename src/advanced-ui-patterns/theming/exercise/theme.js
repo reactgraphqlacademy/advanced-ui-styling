@@ -1,5 +1,5 @@
 const theme = {
-  // add some `colors` here maybe??
-}
+  // add some `colors` here
+};
 
 export default theme;
