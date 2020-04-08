@@ -2,7 +2,7 @@ import React from "react";
 import themes from "./theme";
 import { ThemeProvider as StyledProvider } from "styled-components";
 
-//Task 1, create your `ThemeContext` (use React.CreateContext());
+//Task 1, create your `ThemeContext` (use React.createContext());
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = React.useState("dark");
