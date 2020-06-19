@@ -4,29 +4,24 @@ import Box from "../layout/Box";
 
 const textVariantProps = {
   h1: {
-    as: "h1",
     fontSize: 7,
   },
   h2: {
-    as: "h2",
     fontSize: 6,
   },
   h3: {
-    as: "h3",
     fontSize: 5,
   },
   p: {
-    as: "p",
     fontSize: 2,
   },
   span: {
-    as: "span",
     fontSize: 2,
   },
 };
 
 const Typography = ({ variant, ...rest }) => (
-  <Box {...(variant && textVariantProps[variant])} {...rest} />
+  <Box {...(variant && textVariantProps[variant])} {...rest} as={variant} />
 );
 Typography.defaultProps = {
   variant: "p",
