@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { variant } from "styled-system";
 import Box from "../components/layout/Box";
 import Typography, { Text } from "../components/data-display/Typography";
@@ -10,24 +9,22 @@ Button example
 const buttonVariantProps = {
   primary: {
     backgroundColor: "primary",
-    p: 2 // p:2 is the same in both variants, how can we fix that?
   },
   secondary: {
     backgroundColor: "secondary",
-    p: 2 // p:2 is the same in both variants, how can we fix that?
-  }
+  },
 };
 
-const StyledButton = styled(Box)``;
 const Button = ({ variant, ...rest }) => (
-  <StyledButton {...(variant && buttonVariantProps[variant])} {...rest} />
+  <Box {...(variant && buttonVariantProps[variant])} {...rest} />
 );
 Button.defaultProps = {
   as: "button",
   variant: "primary",
   color: "white",
   fontSize: 2,
-  borderRadius: 2
+  borderRadius: 2,
+  p: 2,
 };
 
 // show students the variant function alternative
