@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import React from "react";
 import Box from "./Box";
 
-const Card = styled(Box)``;
+const Card = (props) => <Box {...props} />;
 
 Card.defaultProps = {
   border: "1px solid",
@@ -11,7 +11,7 @@ Card.defaultProps = {
   backgroundColor: "pink",
   display: " inline-block",
   overflow: "hidden",
-  p: [1, 3]
+  p: [1, 3],
 };
 
 export default Card;

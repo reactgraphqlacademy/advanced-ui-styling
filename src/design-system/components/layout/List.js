@@ -7,7 +7,7 @@ Item.defaultProps = {
   py: 1,
   pl: 3,
   pr: 1,
-  m: 0
+  m: 0,
 };
 
 const List = styled(Box)`
@@ -20,7 +20,7 @@ List.defaultProps = {
   pt: 0,
   pb: 0,
   pl: 0,
-  pr: 0
+  pr: 0,
 };
 
 List.Item = Item;

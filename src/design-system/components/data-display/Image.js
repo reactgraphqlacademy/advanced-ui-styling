@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import React from "react";
 import Box from "../layout/Box";
 
-const Image = styled(Box)``;
+const Image = (props) => <Box {...props} />;
 Image.defaultProps = {
   mb: 1,
-  as: "img"
+  as: "img",
 };
 
 export default Image;

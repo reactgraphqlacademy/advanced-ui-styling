@@ -1,9 +1,10 @@
 import React from "react";
-import styled from "styled-components";
 import { Link as RRLink } from "react-router-dom";
 import Box from "../layout/Box";
 
-const Link = styled(Box)``;
+const Link = (props) => {
+  return <Box {...props} />;
+};
 
 const GenericLink = ({ to, ...rest }) =>
   to && to.match(/^(https:\/\/*|http:\/\/*|mailto:*)/) ? (
@@ -14,7 +15,7 @@ const GenericLink = ({ to, ...rest }) =>
 
 Link.defaultProps = {
   as: GenericLink,
-  color: "pink"
+  color: "pink",
 };
 
 export default Link;
